@@ -1,0 +1,21 @@
+---
+title: "Example Code"
+author: "James Monks"
+date: "25/11/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Some long running code
+Select the code within the following r chunk and then run `runjob::run_job_from_selection()` in the terminal.
+
+```{r}
+add_100 <- purrr::map(1:5, ~{
+  Sys.sleep(3)
+  .x + 100
+})
+```
+

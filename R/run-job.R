@@ -8,7 +8,15 @@
 #' @examples
 run_job <- function(code) {
   # print(code)
-  rstudioapi::documentNew(code, type = "r")
+  fs::dir_create(here::here(".tmp-jobs"))
+
+  file_path <- here::here(".tmp-jobs", "Job.R")
+
+  write(code, file = file_path)
+
+  # TODO: An idea here for deleting the file after the job had finished is to include the fs file deletion code after this.
+  rstudioapi::jobRunScript(file_path, workingDir = here::here(), importEnv = TRUE, exportEnv = "R_GlobalEnv")
+
 }
 
 
