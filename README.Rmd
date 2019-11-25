@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# runjob
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/runjob)](https://CRAN.R-project.org/package=runjob)
+<!-- badges: end -->
+
+The goal of runjob is to provide an easy way to run R jobs from rstudio with a keyboard shortcut, then put the results of the job into the parent environment.
+
+## Installation
+
+You can install the released version of runjob from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("runjob")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(runjob)
+```
+
