@@ -1,5 +1,5 @@
 Package: runjob
-Title: What the Package Does (One Line, Title Case)
+Title: Run a job in the background easily.
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Sets up job to run in the background from the selected code, using the current environment. Providing an add in for keyboard shortcut/drop-down menu access.
 License: GPL-3
 Suggests: 
     testthat

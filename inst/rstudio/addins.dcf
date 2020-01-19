@@ -1,0 +1,5 @@
+Name: Run a Job
+Description: Run a Job from selected code
+Binding: run_job_from_selection
+Interactive: false
+
